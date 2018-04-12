@@ -40,9 +40,12 @@ int main() {
 				voto++;
 				break;
 		}
-	}
+		while (getchar() != '\n');
+	
 	printf ("para finalizar votacion presione 's':\n");
 	scanf ("%c", &s);
+	}
+	
 	porcentaje1=(candidato1/cantidad_votos)*100;
 	porcentaje2=(candidato2/cantidad_votos)*100;
 	porcentaje3=(candidato3/cantidad_votos)*100;
